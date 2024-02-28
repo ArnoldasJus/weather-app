@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API_KEY = "41eda37e697352c6bcafe5a1fc4a0cc8";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 const App: React.FC = () => {
   const [city, setCity] = useState<string>("");
